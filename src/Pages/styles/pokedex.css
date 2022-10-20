@@ -1,0 +1,13 @@
+.pokedex__aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.pokedex__title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+}

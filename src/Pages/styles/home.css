@@ -1,0 +1,61 @@
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url('/public/img/home/pokemon-bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+    
+  }
+  .home__img {
+    
+    max-width: 30rem;
+}
+@media (min-width: 500px) {
+  .home__img {
+      max-width: 40rem;
+      
+  } 
+}
+@media (min-width: 600px) {
+    .home__img {
+        max-width: 50rem;
+        
+    } 
+  }
+  .home__title {
+    color: #FE1936;
+    margin-bottom: 5px;
+  }
+  .home__form {
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+  }
+  .home__description {
+    margin-bottom: 30px;
+  }
+  
+  .home__input {
+    display: block;
+    padding: 8px 12px;
+    border: 0;
+    width: min-content;
+  }
+  .home__input::placeholder {
+    color: #d3d3d3;
+  }
+  .home__btn{
+    padding: 8px 12px;
+    border: none;
+    background-color: #FE1936;
+    color: white;
+    cursor: pointer;
+  }
+  .home__btn:hover {
+    filter: brightness(1.1);
+  }

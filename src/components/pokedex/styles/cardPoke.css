@@ -1,0 +1,276 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-poke {
+    width: 100%;
+    max-width: 35rem;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 1px 7px #0003;
+    border: 1rem solid #B1DBBC;
+    cursor: pointer;
+    transition: transform 200ms ease;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    transition: transform 200ms ease;
+  }
+  .card-poke__header {
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+    position: relative;
+    height: 120px;
+  }
+  
+  
+  .card-poke__sprite {
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  .card-poke__body {
+    margin-top: 70px;
+}
+.card_poke__name {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  .card-poke__types-container{
+    display: flex;
+    margin: 0.5rem 0;
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+  }
+  .card-poke__type{
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 15px;
+  }
+
+  .card-poke__type:nth-child(2){
+    position: relative;
+  }
+  .card-poke__type:nth-child(2)::before {
+    content: '/';
+    position: absolute;
+    left: -11px;
+    font-weight: 500;
+  }
+
+  .card-poke__type-label {
+    margin: 0;
+    text-align: center;
+    color: #ccc;
+    transform: translateY(-0.8rem);
+    font-size: 1.3rem;
+    font-weight: 700;
+    
+  }
+  .card__hr{
+    border: none;
+    border-top: 0.5px solid #E5E5E5;
+  }
+  .card-poke__footer{
+    margin: 15px 0 25px;
+  }
+  .card-poke__stats-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .card-poke__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .card-poke__stat-label {
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .bg-grass {
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);  
+  }
+  /* animation */
+  
+  
+  .border-grass {
+    border: 10px solid #B1DBBC;
+  }
+  .letter-grass {
+    color: #B1DBBC;
+  }
+  .bg-fire {
+    background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+    
+  }
+  
+  .border-fire {
+    border: 10px solid #E75C35;
+  }
+  .letter-fire {
+    color: #E75C35;
+  }
+  
+  .bg-magic {
+    background: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+  }
+  
+  .bg-electric {
+    background: linear-gradient(180deg, #f1ff00 0%, #ff3d5d 100%);
+  
+  }
+  .border-electric {
+    border: 10px solid #f8c621;
+  }
+  .letter-electric {
+    color: #f8c621;
+  }
+  
+  .bg-dark {
+    background: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
+  }
+  .border-dark {
+    border: 10px solid #0D1211;
+  }
+  .letter-dark {
+    color: #0D1211;
+  }
+  
+  .bg-ice {
+    background: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%);
+  }
+  .border-ice {
+    border: 10px solid #64CBF5;
+  }
+  .letter-ice {
+    color: #64CBF5;
+  }
+  
+  .bg-steel {
+    background: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);
+  }
+  .border-steel {
+    border: 10px solid #728881;
+  }
+  .letter-steel {
+    color: #728881;
+  }
+  
+  .bg-rock {
+    background: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%);
+  }
+  .border-rock {
+    border: 10px solid #8D8D94;
+  }
+  .letter-rock {
+    color: #8D8D94;
+  }
+  
+  .bg-ground {
+    background: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
+  }
+  .border-ground {
+    border: 10px solid #895C1A;
+  }
+  .letter-ground {
+    color: #895C1A;
+  }
+  
+  .bg-fighting {
+    background: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
+  }
+  .border-fighting {
+    border: 10px solid #F1613C;
+  }
+  .letter-fighting {
+    color: #F1613C;
+  }
+  
+  .bg-water{
+    background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+  
+  }
+  .border-water {
+    border: 10px solid #1479FB;
+  }
+  .letter-water {
+    color: #1479FB;
+  }
+  
+  .bg-bug {
+    background: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+  }
+  .border-bug {
+    border: 10px solid #3BB039;
+  }
+  .letter-bug {
+    color: #3BB039;
+  }
+  
+  .bg-normal {
+    background: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+  }
+  .border-normal {
+    border: 10px solid #BC6B7C;
+  }
+  .letter-normal {
+    color: #BC6B7C;
+  }
+  
+  .bg-ghost {
+    background: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+  }
+  .border-ghost{
+    border: 10px solid #454AA8;
+  }
+  .letter-ghost{
+    color: #454AA8;
+  }
+  
+  .bg-poison {
+    background: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%);
+  }
+  .border-poison{
+    border: 10px solid #A564E3;
+  }
+  .letter-poison{
+    color:#A564E3;
+  }
+  
+  .bg-dragon {
+    background: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+  }
+  .border-dragon {
+    border: 10px solid #56A4AE;
+  }
+  .letter-dragon {
+    color: #56A4AE;
+  }
+  
+  .bg-psychic {
+    background: linear-gradient(179.75deg, #D9AFD9 -19.96%, #97D9E1 43.67%);
+  }
+  .border-psychic {
+    border: 10px solid #97D9E1 ;
+  }
+  .letter-psychic {
+    color:#97D9E1 ;
+  }

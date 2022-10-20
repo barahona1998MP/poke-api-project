@@ -1,0 +1,35 @@
+li {
+    list-style: none;
+}
+.pagination {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pagination__container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pagination__prev,
+.pagination__next,
+.pagination__page {
+    cursor: pointer;
+    width: 4rem;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination__active {
+    background-color: #DD1A1A;
+    color: white;
+    border-radius: .5rem;
+}

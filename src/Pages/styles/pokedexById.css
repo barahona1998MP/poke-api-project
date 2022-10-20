@@ -1,0 +1,227 @@
+.card-pokeid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-pokeid__contenedor {
+    max-width: 70rem;
+    padding-top: 15rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    background-color: #FFFF;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+
+
+.card-pokeid__header {
+    height: 15rem;
+    position: relative;;
+    border-radius: 1rem;
+}
+
+.card-pokeid__sprite {
+    position: absolute;
+    max-width: 25rem;
+    left: 50%;
+    top: -15rem;
+    transform: translateX(-50%);
+  }
+
+  .card-pokeid__Back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.card-pokeid__link {
+    color: #fff;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #000;
+  }
+  .card-pokeid__link:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  .card-pokeid__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-pokeid__id {
+    margin: 0;
+    padding: 2rem;
+    font-size: 3rem;
+  }
+
+  .card_pokeid__name {
+    font-size: 3rem;
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+
+  .card-pokeid__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+  }
+
+  .card-pokeid__measures {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+.card-pokeid__type-ability {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid black;
+    width: 90%;
+    border-radius: 1rem;
+    flex-direction: column;
+}
+
+.type,
+.ability {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-pokeid__type-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card-pokeid__abilities,
+.card-pokeid__type {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    
+}
+
+.card-pokeid__type li,
+.card-pokeid__abilities li{
+    width: 12rem;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+
+.card-pokeid__stat {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.card-pokeid__stats-container {
+    width: 90%;   
+}
+
+.card-pokeid-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.card-pokeid__stat-label,
+.card-pokeid__stat-number {
+    margin: 0;
+}
+
+.card-pokeid-title {
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.menu {
+    position: relative;
+    border: 1px solid #000;
+    border-radius: 2rem;
+}
+
+.card-pokeid__stat-li:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.menu div {
+    position: relative;
+    width: 0;
+    padding: 1rem;
+    height: .8rem;
+    border-radius: 1rem;
+
+}
+
+/* Movements */
+.card-pokeid__moves {
+    max-width: 70rem;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background-color: #FFFF;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.card-pokeid__moves-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-pokeid__moves-title {
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0;
+    font-size: 3rem;
+}
+
+.card-pokeid__moves-item {
+    background-color: #d3d3d3;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-weight: 500;
+}
+
+
+
